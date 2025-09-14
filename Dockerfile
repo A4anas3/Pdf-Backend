@@ -7,6 +7,7 @@ WORKDIR /app
 # Copy the Maven wrapper and project definition files
 COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
+RUN chmod +x ./mvnw
 
 # Download dependencies to leverage Docker's layer caching
 RUN ./mvnw dependency:go-offline

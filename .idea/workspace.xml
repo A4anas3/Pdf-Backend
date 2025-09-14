@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91e342ec-6819-4c0d-9ba8-e40b1ab3e943" name="Changes" comment="testing" />
+    <list default="true" id="91e342ec-6819-4c0d-9ba8-e40b1ab3e943" name="Changes" comment="testing">
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,12 +28,12 @@
     &quot;assignee&quot;: &quot;A4anas3&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/A4anas3/Pdf-Backend.git",
-    "accountId": "cba3d22d-1539-4904-ad09-39d19e44fe4d"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/A4anas3/Pdf-Backend.git&quot;,
+    &quot;accountId&quot;: &quot;cba3d22d-1539-4904-ad09-39d19e44fe4d&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -54,6 +56,8 @@
     "Docker.Dockerfile.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "B:/AllNewProject/PDFMerger-Backend",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
@@ -76,6 +80,31 @@
       <option name="presentableId" value="Default" />
       <updated>1757794593439</updated>
     </task>
+    <task id="LOCAL-00001" summary="testing">
+      <option name="closed" value="true" />
+      <created>1757815444947</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1757815444947</updated>
+    </task>
+    <task id="LOCAL-00002" summary="testing">
+      <option name="closed" value="true" />
+      <created>1757815486713</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1757815486713</updated>
+    </task>
+    <task id="LOCAL-00003" summary="testing">
+      <option name="closed" value="true" />
+      <created>1757815749948</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1757815749948</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
