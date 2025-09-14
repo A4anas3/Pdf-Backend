@@ -1,5 +1,5 @@
 # STAGE 1: Build the application using the full JDK 17
-FROM openjdk:26-jdk-slim AS builder
+FROM openjdk:26-slim-bullseye AS builder
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -17,8 +17,8 @@ COPY src ./src
 # Package the application into a JAR file
 RUN ./mvnw package -DskipTests
 
-# STAGE 2: Create the final, lightweight runtime image
-FROM openjdk:26-jre-slim
+# STAGE 2: Create the final, lightweight runtime i
+FROM openjdk:26-slim-bullseye
 
 # Set the working directory for the final image
 WORKDIR /app
