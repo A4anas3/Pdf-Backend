@@ -1,15 +1,38 @@
-# Use a stable and verified Java 21 runtime image
-FROM openjdk:26-slim-bullseye
+# STAGE 1: Build the application using the full JDK 17
+FROM openjdk:17-jdk-slim AS builder
+
 # Set the working directory inside the container
 WORKDIR /app
 
-# Copy the pre-built JAR file from your 'target' folder into the image
-# Renames it to 'app.jar' for a consistent entrypoint
-COPY target/PDFMerger-Backend-0.0.1-SNAPSHOT.jar app.jar
+# Copy the Maven wrapper and project definition files
+COPY .mvn/ .mvn
+COPY mvnw pom.xml ./
 
-# Tell Docker the container listens on port 8888
+# Download dependencies to leverage Docker's layer caching
+RUN ./mvnw dependency:go-offline
+
+# Copy the rest of the application's source code
+COPY src ./src
+
+# Package the application into a JAR file
+RUN ./mvnw package -DskipTests
+
+# STAGE 2: Create the final, lightweight runtime image
+FROM openjdk:17-jre-slim
+
+# Set the working directory for the final image
+WORKDIR /app
+
+# For better security, create a dedicated non-root user
+RUN addgroup --system spring && adduser --system spring --ingroup spring
+USER spring:spring
+
+# Copy the built JAR file from the 'builder' stage
+COPY --from=builder /app/target/PDFMerger-Backend-0.0.1-SNAPSHOT.jar app.jar
+
+# Expose the port your application listens on
 EXPOSE 8888
 
-# The command to run the application
+# The command to start your application
 ENTRYPOINT ["java", "-jar", "app.jar"]
 
