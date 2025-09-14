@@ -51,13 +51,23 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.PdfMergerApplication.executor": "Run",
+    "Docker.Dockerfile.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
     "last_opened_file_path": "B:/AllNewProject/PDFMerger-Backend",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="B:\AllNewProject\PDFMerger-Backend" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="open Docker" />
+    </option>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="91e342ec-6819-4c0d-9ba8-e40b1ab3e943" name="Changes" comment="" />
